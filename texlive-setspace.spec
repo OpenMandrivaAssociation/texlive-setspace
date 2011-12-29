@@ -26,16 +26,8 @@ can be changed as required with the \singlespacing,
 \onehalfspacing, and \doublespacing commands. Other size
 spacings also available.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -47,7 +39,6 @@ spacings also available.
 %{_texmfdistdir}/tex/latex/setspace/setspace.sty
 %doc %{_texmfdistdir}/doc/latex/setspace/README
 %doc %{_texmfdistdir}/doc/latex/setspace/setspace-test.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,5 +49,3 @@ spacings also available.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
