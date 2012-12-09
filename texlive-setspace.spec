@@ -49,3 +49,21 @@ spacings also available.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 6.7a-2
++ Revision: 755915
+- Rebuild to reduce used resources
+
+* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 6.7a-1
++ Revision: 745307
+- texlive-setspace
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 6.7-1
++ Revision: 719513
+- texlive-setspace
+- texlive-setspace
+- texlive-setspace
+- texlive-setspace
+
