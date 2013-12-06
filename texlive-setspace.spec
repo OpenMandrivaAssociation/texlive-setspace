@@ -6,7 +6,7 @@
 # catalog-version 6.7a
 Name:		texlive-setspace
 Version:	6.7a
-Release:	5
+Release:	6
 Summary:	Set space between lines
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/setspace
