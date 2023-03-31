@@ -1,6 +1,6 @@
 Name:		texlive-setspace
 Version:	24881
-Release:	1
+Release:	2
 Summary:	Set space between lines
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/setspace
